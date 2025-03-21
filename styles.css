@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(204, 217, 236);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  font-weight: bold;
+}
+
+div form input[type="text"],
+div form input[type="email"],
+div form input[type="password"] {
+  width: 100%;
+  padding: 25px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+div form input[type="button"] {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(60, 100, 161);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2m;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+div form input[type="button"]:hover {
+  background-color: rgb(122, 147, 202);
+}
+
+/* SOLO PARA EL MENSAJE DE ERROR */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* SOLO PARA EL MENSAJE DE EXITO */
+.success-message {
+  color: rgb(1, 124, 1);
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex; 
+}
